@@ -36,7 +36,7 @@ export default async function TermsPage({
             이용약관
           </h1>
           <div className="prose prose-zinc mt-6 dark:prose-invert">
-            <p>최종 수정일: 2026년</p>
+            <p>최종 수정일: 2026년 9월 18일</p>
 
             <h2>서비스 이용</h2>
             <p>
@@ -76,7 +76,7 @@ export default async function TermsPage({
             Terms of Use
           </h1>
           <div className="prose prose-zinc mt-6 dark:prose-invert">
-            <p>Last updated: 2026</p>
+            <p>Last updated: September 18, 2026</p>
 
             <h2>Using the service</h2>
             <p>

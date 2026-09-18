@@ -38,7 +38,7 @@ export default async function PrivacyPage({
             개인정보처리방침
           </h1>
           <div className="prose prose-zinc mt-6 dark:prose-invert">
-            <p>최종 수정일: 2026년</p>
+            <p>최종 수정일: 2026년 9월 18일</p>
 
             <h2>도구에 입력·업로드하는 데이터</h2>
             <p>
@@ -82,7 +82,7 @@ export default async function PrivacyPage({
             Privacy Policy
           </h1>
           <div className="prose prose-zinc mt-6 dark:prose-invert">
-            <p>Last updated: 2026</p>
+            <p>Last updated: September 18, 2026</p>
 
             <h2>Data you enter or upload into the tools</h2>
             <p>
