@@ -1,0 +1,11 @@
+export const LOCALES = ["ko", "en"] as const;
+export type Locale = (typeof LOCALES)[number];
+export const DEFAULT_LOCALE: Locale = "ko";
+
+export function isLocale(value: string): value is Locale {
+  return (LOCALES as readonly string[]).includes(value);
+}
+
+export function otherLocale(locale: Locale): Locale {
+  return locale === "ko" ? "en" : "ko";
+}

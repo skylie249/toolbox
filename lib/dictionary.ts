@@ -1,0 +1,68 @@
+import type { Locale } from "./i18n";
+
+export const dictionary = {
+  ko: {
+    common: {
+      freeTool: "무료 도구",
+      openTool: "도구 열기 →",
+      copy: "복사",
+      copied: "복사됨!",
+      download: "다운로드",
+      clear: "초기화",
+      home: "홈",
+      about: "소개",
+      contact: "문의",
+      privacy: "개인정보처리방침",
+      terms: "이용약관",
+      company: "회사",
+      legal: "법적 고지",
+      tools: "도구",
+      language: "언어",
+      whyTitle: "왜 NexaLab Toolbox인가요?",
+      why1Title: "설계부터 개인정보 보호",
+      why1Body: "모든 도구는 브라우저에서만 동작해요. 입력한 데이터나 파일은 서버로 전송되거나 저장되지 않아요.",
+      why2Title: "회원가입 불필요",
+      why2Body: "도구를 열고 바로 사용하세요. 계정도, 이메일도, 결제도 필요 없어요.",
+      why3Title: "빠르고 무료",
+      why3Body: "입력하는 즉시 결과가 반영되고, 모든 도구는 언제든 무료로 사용할 수 있어요.",
+      faqHeading: "자주 묻는 질문",
+      footerTagline: "무료 브라우저 기반 데이터 유틸리티.",
+      footerProjectBy: "의 프로젝트입니다.",
+      footerNote: "모든 처리는 브라우저에서 이루어져요 — 어떤 데이터도 서버에 업로드되지 않아요.",
+    },
+  },
+  en: {
+    common: {
+      freeTool: "Free tool",
+      openTool: "Open tool →",
+      copy: "Copy",
+      copied: "Copied!",
+      download: "Download",
+      clear: "Clear",
+      home: "Home",
+      about: "About",
+      contact: "Contact",
+      privacy: "Privacy Policy",
+      terms: "Terms of Use",
+      company: "Company",
+      legal: "Legal",
+      tools: "Tools",
+      language: "Language",
+      whyTitle: "Why NexaLab Toolbox?",
+      why1Title: "Private by design",
+      why1Body: "Every tool runs entirely in your browser. Your data and files are never sent to a server or stored anywhere.",
+      why2Title: "No sign-up required",
+      why2Body: "Just open a tool and start using it. No accounts, no email, no paywalls.",
+      why3Title: "Fast and free",
+      why3Body: "Results update instantly, and every tool is free to use as often as you like.",
+      faqHeading: "Frequently asked questions",
+      footerTagline: "Free browser-based data utilities.",
+      footerProjectBy: "A project by",
+      footerNote: "All processing happens in your browser — no data is ever uploaded to a server.",
+    },
+  },
+} as const satisfies Record<Locale, unknown>;
+
+export function t(locale: Locale) {
+  return dictionary[locale].common;
+}
